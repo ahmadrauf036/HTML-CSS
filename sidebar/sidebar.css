@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    font-family: sans-serif;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("background.jpg");
+    background-size: cover;
+    color: white;
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 200px;
+    position: absolute; 
+    top: 0;
+    left: -200px;
+    background-color: rgba(255, 255, 255, 0.06);
+    transition-duration: 0.2s ;
+    transition-timing-function: ease-in;
+}
+
+#titleBox{
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 30px;
+}
+#xmark{
+    position: relative;
+    left: 140px;
+    top: 18px;
+    font-size: 20px;
+    z-index: 1;
+    color: rgb(91, 91, 91);
+    transition-duration: 0.1s ;
+    transition-timing-function: ease-in;
+    opacity: 0;
+    pointer-events: auto;
+}
+hr{
+    border-color: rgba(255, 255, 255, 0.1);
+    border-width: 2px;
+}
+.options{
+    margin-top: 35px;
+    margin-left: 30px;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top: 100px;
+    width: 100%;
+        
+}
+#icon{
+    margin-left: 10px;
+}
+#check{
+    display: none;
+}
+#bars{
+    position: relative;
+    font-size: 20px;
+    left: 60px;
+    top: 40px;
+    z-index: 1;
+}
+#check:checked ~ #sidebar{ 
+    left: 0px;
+}
+#check:checked ~ #xmark{ 
+    opacity: 1;
+    pointer-events: auto;
+}
+#check:checked ~ #bars{
+    position: relative;
+    left:-200px;
+}

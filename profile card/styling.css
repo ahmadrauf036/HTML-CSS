@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin:0 ;
+}
+body{
+    height: 100vh;
+    width: 100vw;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+}
+#container{
+    background-color: white;
+    height: 330px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    
+}
+#upper{
+    height: 38%;
+    width: 100%; 
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 22px 22px 0px 0px; 
+}
+#profile_pic{
+    height: 100px;
+    width: 100px; 
+    object-position:top;
+    object-fit:cover;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+    border: 2px solid #1A1A1A;
+    position: relative;
+    top:30px;
+    
+}
+#name{
+    position: relative;
+    top:35px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+#title{
+    position: relative;
+    top:35.6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight:400;
+}
+#accounts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#icon1,#icon2,#icon3,#icon4{
+    position: relative;
+    top:70px;
+    height: 25px;
+    width: 25px;
+    color: white;
+    border-radius:50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+#icon1{
+    background-color: rgb(205, 72, 107);
+}
+#icon2{
+    background-color: rgb(24, 119, 242);
+}
+#icon4{
+    background-color: rgb(0, 0, 0);
+}
+#icon3{
+    background-color:rgb(0 119 181);
+}
+#contact{
+    position: relative;
+    top:85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contactme{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #1A1A1A;
+    border-width: 0;
+    color: white;
+    font-weight: bold;
+}
+#msg{
+    width: 100%;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#msgme{
+    height: 30px;
+    width: 85%;
+    border:1px solid #232323;
+    background-color: rgb();
+    border:2px solid #232323;
+    background-color: #232323;
+    color:white;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
+}
+#msgme:hover{
+    color:black;
+    background-color: white;
+    border:2px solid #232323;
+}
+#send-but{
+    height: 100%;
+    width: 25px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #1A1A1A;
+    border-width: 0;
+    border-left: 2px solid white;
+    color: whitesmoke;
+
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+#send-but:hover{
+    color:black;
+    background-color: white;
+    border:2px solid #232323;
+
+} 
